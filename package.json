@@ -1,0 +1,12 @@
+{
+  "name": "self-compassion-hub",
+  "version": "1.0.0",
+  "description": "青少年自我关怀干预与受害研究知识库",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

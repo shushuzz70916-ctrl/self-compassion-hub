@@ -1,0 +1,191 @@
+{
+  "model": [
+    {
+      "component": "自我友善 Self-Kindness",
+      "desc": "以温暖和理解对待自己，而非苛刻评判",
+      "positive": "自我友善",
+      "negative": "自我评判"
+    },
+    {
+      "component": "共同人性 Common Humanity",
+      "desc": "将挣扎视为人类共有经历，而非孤立无援",
+      "positive": "共同人性",
+      "negative": "孤立感"
+    },
+    {
+      "component": "正念 Mindfulness",
+      "desc": "对想法和情绪保持平衡、不加评判的觉知",
+      "positive": "正念觉察",
+      "negative": "过度认同"
+    }
+  ],
+  "programs": [
+    {
+      "name": "Making Friends with Yourself (MFY)",
+      "developer": "Dr. Karen Bluth (UNC Chapel Hill) & Lorraine Hobbs (UCSD)",
+      "age": "14-17 岁",
+      "format": "8 周团体课程，每周 90 分钟",
+      "description": "MSC 青少年版旗舰项目。包含更短的引导冥想、动手活动（正念艺术、音乐冥想）、青少年大脑发育讲解。16 节现成课程已出版（2024 年 6 月，PESI Publishing，ISBN: 9781683737667）。",
+      "keyFinding": "初步研究 (N=34): 自我同情和生活满意度显著提升，抑郁、焦虑、感知压力和负面情绪显著下降 (Bluth et al., 2016, Mindfulness)。",
+      "doi": "10.1007/s12671-015-0476-6"
+    },
+    {
+      "name": "MSC-T (Mindful Self-Compassion for Teens) — RCT 版",
+      "developer": "Dr. Karen Bluth 团队",
+      "age": "平均 15.81 岁",
+      "format": "8 周初治 + 6 个月度巩固课程（共 36 周）",
+      "description": "针对亚综合征抑郁青少年的 RCT 研究。MSC-T 组 vs. 健康生活方式对照组。",
+      "keyFinding": "对照组发展出临床抑郁的风险是 MSC-T 组的 2.6 倍。MSC-T 组抑郁显著下降，对照组显著上升 (Bluth et al., 2024, Journal of Adolescence)。",
+      "doi": "10.1002/jad.12277"
+    },
+    {
+      "name": "Compassion Focused Therapy (CFT) for Adolescents",
+      "developer": "基于 Paul Gilbert 的 CFT 框架",
+      "age": "11-17 岁",
+      "format": "团体式同情聚焦干预",
+      "description": "CFT 已针对青少年调整。Roberts et al. (2025) 系统综述纳入 9 项研究、138 名参与者。初步显示改善自我同情的潜力，但证据仍混杂且方法学差异大。2024 年尚无青少年 CFT 研究达到第三浪潮疗法荟萃分析的纳入标准——这是重大的证据缺口。",
+      "keyFinding": "初步益处但结果混杂；青少年 CFT 的 RCT 极其稀少——是亟待填补的证据空白 (Roberts et al., 2025)。",
+      "doi": "10.1002/cpp.70259"
+    },
+    {
+      "name": "Inner Strength Teen Program",
+      "developer": "美国费城校本项目",
+      "age": "中学生",
+      "format": "12 周（每周 45 分钟），97 个班级",
+      "description": "校本正念与自我同情课程。2025 年发表在 Contemporary School Psychology。",
+      "keyFinding": "N=2,121 名学生。自我同情与自我调节显著提升；初始自我调节较低的班级获益最大。",
+      "doi": ""
+    },
+    {
+      "name": "CMT-Pupils (Compassionate Mind Training for Pupils)",
+      "developer": "英国",
+      "age": "11-12 岁",
+      "format": "5 周课程",
+      "description": "针对小学生的同情心智训练校本项目。",
+      "keyFinding": "N=67。焦虑显著下降；教师亦报告获益。发表在 Mindfulness (2024)。",
+      "doi": ""
+    },
+    {
+      "name": "\"The Reassured Self\" 项目",
+      "developer": "沙特阿拉伯",
+      "age": "平均 13.7 岁",
+      "format": "3 次课程（2 周内完成）",
+      "description": "针对农村女性青少年的自我关怀干预，文化适应性良好。",
+      "keyFinding": "N=133。焦虑显著下降（平均差 -4.11, p=0.005）；游戏成瘾显著下降 (ScienceDirect, 2025)。",
+      "doi": ""
+    }
+  ],
+  "studies": [
+    {
+      "title": "How Do Aspects of Selfhood Relate to Depression and Anxiety Among Youth? A Meta-Analysis",
+      "authors": "Yeo, G., Tan, C., Ho, D., & Baumeister, R.F.",
+      "year": 2023,
+      "journal": "Psychological Medicine, 53(11), 4833-4855",
+      "finding": "最大规模荟萃分析之一。298 项研究、274,370 名青少年、39 个国家。自我同情与抑郁呈中等至强负相关（r = -0.455），双向因果关系成立。",
+      "sample": "298 项研究，274,370 名青少年",
+      "doi": "https://pubmed.ncbi.nlm.nih.gov/37212050"
+    },
+    {
+      "title": "Self-Compassion in Children and Adolescents: A Systematic Review Through a Developmental Lens",
+      "authors": "Muris, P. & Otgaar, H.",
+      "year": 2025,
+      "journal": "Current Psychology, 44, 755-783",
+      "finding": "近年发表量急剧增长。积极自我同情成分与消极自我同情成分对心理健康的贡献存在差异；'消极'自我同情（自我评判、孤立、过度认同）可能是心理病理学更强的预测因子。覆盖 141 篇文章。",
+      "sample": "141 篇文章",
+      "doi": "10.1007/s12144-024-07053-7"
+    },
+    {
+      "title": "On the Edge of Psychopathology: Strong Relations Between Reversed Self-Compassion and Symptoms",
+      "authors": "Lorenzini, L. et al.",
+      "year": 2024,
+      "journal": "Clinical Child and Family Psychology Review",
+      "finding": "积极自我同情对焦虑/抑郁的保护效应为中等，而消极自我同情的脆弱性效应为大且显著更强。SCS 总分可能高估自我同情的保护作用。",
+      "sample": "16 项研究的荟萃分析",
+      "doi": "10.1007/s10567-024-00471-w"
+    },
+    {
+      "title": "Third Wave Interventions for Adolescents with Mental Health Disorders: A Systematic Review with Meta-Analysis",
+      "authors": "Sandery, B. & Baranoff, J.",
+      "year": 2024,
+      "journal": "Journal of Contextual Behavioral Science",
+      "finding": "纳入 DBT 12 项 (N=584)；CFT 无符合标准的研究。对抑郁、焦虑和情绪调节的效果显著且汇总效应量大。青少年 CFT 研究严重缺乏——0 项研究达到纳入标准。",
+      "sample": "50 项 RCT 的系统综述",
+      "doi": "10.1016/j.jcbs.2024.100841"
+    },
+    {
+      "title": "Feasibility, Acceptability, and Depression Outcomes of MSC-T for Adolescents with Subsyndromal Depression",
+      "authors": "Bluth, K., Lathren, C., Clepper-Faith, M. et al.",
+      "year": 2024,
+      "journal": "Journal of Adolescence, 96(2), 204-218",
+      "finding": "MSC-T 组 vs 健康生活方式对照组的 RCT。MSC-T 组临床抑郁风险降低 2.6 倍，抑郁显著下降。这是青少年自我同情干预领域最重要的 RCT 之一。",
+      "sample": "59 名美国青少年（平均年龄 15.81，70% 女性）",
+      "doi": "10.1002/jad.12277"
+    }
+  ],
+  "metaAnalyses": [
+    {
+      "authors": "Yeo et al.",
+      "year": 2023,
+      "journal": "Psychological Medicine",
+      "scope": "298 项研究，274,370 人，39 国",
+      "keyFinding": "SC 与抑郁 r=-0.455；双向因果关系",
+      "doi": "https://pubmed.ncbi.nlm.nih.gov/37212050"
+    },
+    {
+      "authors": "Muris & Otgaar",
+      "year": 2025,
+      "journal": "Current Psychology",
+      "scope": "141 篇文章",
+      "keyFinding": "积极与消极 SC 成分贡献不同；消极成分预测力更强",
+      "doi": "10.1007/s12144-024-07053-7"
+    },
+    {
+      "authors": "Lorenzini et al.",
+      "year": 2024,
+      "journal": "Clinical Child & Family Psychology Review",
+      "scope": "16 项研究",
+      "keyFinding": "消极 SC 的脆弱性效应 > 积极 SC 的保护效应",
+      "doi": "10.1007/s10567-024-00471-w"
+    },
+    {
+      "authors": "Sandery & Baranoff",
+      "year": 2024,
+      "journal": "J. Contextual Behavioral Science",
+      "scope": "50 项 RCT",
+      "keyFinding": "第三浪潮疗法对青少年情绪问题效果显著；CFT 研究缺乏",
+      "doi": "10.1016/j.jcbs.2024.100841"
+    },
+    {
+      "authors": "Perkins et al.",
+      "year": 2023,
+      "journal": "British J. Clinical Psychology",
+      "scope": "50 项 RCT",
+      "keyFinding": "第三浪潮 CBT 整体有效；仅 2 项 CFT 研究",
+      "doi": "10.1111/bjc.12404"
+    },
+    {
+      "authors": "Roberts et al.",
+      "year": 2025,
+      "journal": "Clinical Psychology & Psychotherapy",
+      "scope": "9 项研究，138 人",
+      "keyFinding": "CFT 团体对青少年初步有益但结果混杂",
+      "doi": "10.1002/cpp.70259"
+    },
+    {
+      "authors": "学生正念干预荟萃分析",
+      "year": 2024,
+      "journal": "J. Rational-Emotive & Cognitive-Behavior Therapy",
+      "scope": "34 项研究",
+      "keyFinding": "正念干预培养 SC 效应量 0.61；抑郁 0.63；焦虑 0.48",
+      "doi": ""
+    },
+    {
+      "authors": "过渡年龄青少年 ACT 荟萃分析",
+      "year": 2025,
+      "journal": "—",
+      "scope": "65 项研究，5,283 人",
+      "keyFinding": "整体效应 Hedges' g=0.72；SC 为关键过程指标",
+      "doi": ""
+    }
+  ]
+}
