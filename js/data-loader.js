@@ -85,63 +85,61 @@ async function renderInterventions() {
   }
 }
 
-// ===== Victimization Page =====
+// ===== Victimization Page (SC × Adolescent Victimization) =====
 async function renderVictimization() {
   try {
     const data = loadData('data-victimization');
 
-    // Types
-    if (data.types) {
-      const list = document.getElementById('types-list');
-      list.innerHTML = data.types.map(t => `
+    // Protection mechanisms
+    if (data.mechanisms) {
+      const list = document.getElementById('mechanism-list');
+      list.innerHTML = data.mechanisms.map(m => `
         <div class="research-card">
-          <h4>${t.name}</h4>
-          <p>${t.description}</p>
-          <div class="meta" style="margin-top:.5rem"><span>流行率: ${t.prevalence}</span></div>
-          ${renderTags(t.tags)}
+          <h4>${m.title}</h4>
+          <div class="meta"><span>${m.authors}</span><span>${m.journal}</span></div>
+          <div class="finding">${m.finding}</div>
+          ${m.doi ? renderDOILink(m.doi, 'DOI') : ''}
         </div>
       `).join('');
     }
 
-    // Key studies
-    if (data.studies) {
-      const list = document.getElementById('vict-studies-list');
-      list.innerHTML = data.studies.map(s => `
+    // RCTs
+    if (data.rcts) {
+      const list = document.getElementById('rct-list');
+      list.innerHTML = data.rcts.map(r => `
         <div class="research-card">
-          <h4>${s.title}</h4>
-          <div class="meta">
-            <span>${s.authors}</span><span>${s.journal} (${s.year})</span>
-            ${s.doi ? `<a href="${s.doi.startsWith('http') ? s.doi : 'https://doi.org/' + s.doi}" class="doi-link" target="_blank" rel="noopener">DOI</a>` : ''}
-          </div>
-          <div class="finding">${s.finding}</div>
-          ${s.sample ? `<p style="font-size:.85rem;color:var(--text-light)">样本: ${s.sample}</p>` : ''}
+          <h4>${r.title}</h4>
+          <div class="meta"><span>${r.authors}</span><span>${r.year}</span></div>
+          <div class="finding">${r.finding}</div>
+          ${r.doi ? renderDOILink(r.doi, '查看注册') : ''}
         </div>
       `).join('');
     }
 
-    // Meta-analyses
-    if (data.metaAnalyses) {
-      const tbody = document.getElementById('vict-meta-table-body');
-      tbody.innerHTML = data.metaAnalyses.map(m => `
+    // Longitudinal evidence
+    if (data.longitudinal) {
+      const list = document.getElementById('longitudinal-list');
+      list.innerHTML = data.longitudinal.map(l => `
+        <div class="research-card">
+          <h4>${l.title}</h4>
+          <div class="meta"><span>${l.authors}</span><span>${l.journal}</span></div>
+          <div class="finding">${l.finding}</div>
+          ${l.doi ? renderDOILink(l.doi, 'DOI') : ''}
+        </div>
+      `).join('');
+    }
+
+    // Victim type × SC intervention table
+    if (data.victimTypes) {
+      const tbody = document.getElementById('victim-type-table');
+      tbody.innerHTML = data.victimTypes.map(v => `
         <tr>
-          <td>${m.authors} (${m.year})</td>
-          <td>${m.journal}</td>
-          <td>${m.scope}</td>
-          <td>${m.keyFinding}</td>
-          <td>${renderDOILink(m.doi, '链接')}</td>
+          <td><strong>${v.type}</strong></td>
+          <td>${v.intervention}</td>
+          <td>${v.study}</td>
+          <td>${v.finding}</td>
+          <td>${v.doi ? renderDOILink(v.doi, '链接') : ''}</td>
         </tr>
-      `).join('');
-    }
-
-    // SC protective factor
-    if (data.protectiveFactor) {
-      const list = document.getElementById('sc-protective');
-      list.innerHTML = data.protectiveFactor.map(p => `
-        <div class="research-card">
-          <h4>${p.study}</h4>
-          <div class="finding">${p.finding}</div>
-          ${p.doi ? renderDOILink(p.doi, '查看论文') : ''}
-        </div>
       `).join('');
     }
   } catch(e) {
