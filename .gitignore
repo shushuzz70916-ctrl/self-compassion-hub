@@ -1,2 +1,19 @@
 node_modules/
 .DS_Store
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+Thumbs.db
+
+# Log files
+*.log
+npm-debug.log*
+
+# Environment files
+.env
+.env.local
